@@ -19,8 +19,10 @@ public class isPalindromeNumber {
        int end = array.size() - 1;
        boolean isPalindrome = true; //flag
        //Case - len == 2 so the digits must be identical
-       if (array.size() == 2 && array.get(start) != array.get(end)) {
-           return isPalindrome = false;
+       if (array.size() == 2 && array.get(start) == array.get(end)) {
+           isPalindrome = false;
+       } else {
+           isPalindrome = false;
        }
        //General
        while (isPalindrome && start != end) {
