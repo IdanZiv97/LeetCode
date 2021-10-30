@@ -16,7 +16,12 @@ public class isPalindromeNumber {
        } while (x > 0);
        int start = 0;
        int end = array.size() - 1;
-       boolean isPalindrome = true;
+       boolean isPalindrome = true; //flag
+       //Case - len == 2 so the digits must be identical
+       if (array.size() == 2 && array.get(start) != array.get(end)) {
+           return isPalindrome = false;
+       }
+       //General
        while (isPalindrome && start != end) {
            if (array.get(start) != array.get(end)) {
                isPalindrome = false;   
@@ -25,5 +30,5 @@ public class isPalindromeNumber {
            start++;
        }
        return isPalindrome;
-   }
+    }
 }
