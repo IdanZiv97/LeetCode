@@ -20,14 +20,18 @@ public class isPalindromeNumber {
        boolean isPalindrome = true; //flag
        //Case - len == 2 so the digits must be identical
        if (array.size() == 2 && array.get(start) == array.get(end)) {
-           isPalindrome = false;
-       } else {
+           return true;
+       } else if (array.size() == 2) {
            isPalindrome = false;
        }
        //General
        while (isPalindrome && start != end) {
            if (array.get(start) != array.get(end)) {
                isPalindrome = false;   
+           }
+           //Case - for even length numbers, i.e 1001
+           if (start > end) {
+               break;
            }
            end--;
            start++;
