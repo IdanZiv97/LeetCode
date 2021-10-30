@@ -5,6 +5,7 @@ import java.util.ArrayList;
  */
 public class isPalindromeNumber {
    public boolean solution(int x) {
+       //If the number is negative the '-' will always break the palindrome
        if (x < 0) {
            return false;
        }
