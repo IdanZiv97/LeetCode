@@ -1,2 +1,5 @@
 *.vscode
 *.json
+*class
+settigns.json
+.DS_Store
