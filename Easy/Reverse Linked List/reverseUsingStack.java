@@ -1,7 +1,7 @@
 import java.util.Stack;
-
 /**
- * reverseUsingStack
+ * reverseLinkedList - 0ms  runtime
+ * 206. Reverse Linked List - https://leetcode.com/problems/reverse-linked-list/
  */
 public class reverseUsingStack {
 
