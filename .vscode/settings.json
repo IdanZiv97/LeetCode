@@ -1,6 +1,9 @@
 {
     "java.project.sourcePaths": [
         "LeetCode/Easy",
-        "Easy"
+        "Easy",
+        "romanToInteger",
+        "Easy/Roman To Integer",
+        "Medium"
     ]
 }
