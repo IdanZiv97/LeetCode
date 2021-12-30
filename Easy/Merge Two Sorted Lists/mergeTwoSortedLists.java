@@ -28,18 +28,4 @@ public class mergeTwoSortedLists {
         // get the real head of the merged list
         return sentry.next;
     }
-    public static void main(String[] args) {
-        ListNode l1_node1 = new ListNode(1);
-        ListNode list1 = l1_node1;
-        l1_node1.next = new ListNode(2);
-        l1_node1 = l1_node1.next;
-        l1_node1.next = new ListNode(4);
-        ListNode l2_node2 = new ListNode(1);
-        ListNode list2 = l2_node2;
-        l2_node2.next = new ListNode(3);
-        l2_node2 = l2_node2.next;
-        l2_node2.next = new ListNode(4);
-        ListNode newList = mergeTwoSortedLists.mergeLists(list1, list2);
-        System.out.println("test");
-    }
 }
